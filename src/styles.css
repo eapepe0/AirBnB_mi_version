@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Poppins, serif;
+}
+
+.contenedor--general {
+  /* el contendor general ocupa toda la pantalla */
+  width: 100vw; /* ocupa todo el ancho */
+
+  display: flex; /* alineamos todo al medio */
+  align-content: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.plantilla {
+  width: 550px; /* el tamaño de navbar donde ponemos nuestro contenido */
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.logo {
+  /* achicamos el logo de arbnb  */
+  width: 82px;
+  height: 25px;
+  margin-left: 30px; /* lo corremos del costado del navbar */
+}
+
+.navbar {
+  height: 70px; /* la navbar 70px de alto */
+  width: 100%; /* ocupa todo el contenedor */
+  display: flex; /* alineamos todo al medio */
+  align-items: center;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1); /* le damos un sombreado */
+}
+
+.main__container {
+  /* aca va la foto tipo grid */
+  display: flex; /* movemos todo al medio */
+  justify-content: center;
+  margin-top: 26px; /* lo despegamos del final de la navbar */
+}
+
+.photo-grid {
+  /* achicamos la foto  */
+  max-width: 400px;
+}
+
+.hero--container {
+  margin-top: 2rem; /* despegamos de la foto el contenedor donde esta el texto */
+}
+.title--hero {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 30px; /* corremos el titulo a la derecha */
+}
+.title--parrafo {
+  font-size: 16px;
+  font-weight: 300;
+  width: 330px; /* achicamos el tamaño del contenedor del parrafo*/
+  padding: 0 30px; /* lo tiramos a la derecha */
+}
+
+.card--container {
+  /* contenedor donde estan las fotos */
+  display: flex;
+  flex-wrap: wrap; /* si sobresale el contenido salta a la otra fila */
+  justify-content: center; /* centramos */
+  margin-top: 3rem; /* despegamos el contenedor de arriba */
+}
+.card {
+  margin: 20px 20px; /* despegamos cada tarjeta del borde del contenedor y de cada tarjeta en si */
+}
+.card--foto {
+  width: 176px; /* achicamos cada foto */
+  height: 235px; /* le damos el ancho tambien */
+  border-radius: 8px; /* las redondeamos */
+}
+
+.rating {
+  /* contenedor donde esta el texto , precio , estrella */
+  display: flex; /*  centramos el contenedor */
+  align-items: center; /* la estrella queda bien el radio */
+  margin-top: 9px;
+}
+.star--img {
+  width: 14px; /* achicamos la estrella */
+}
+
+.rating--text {
+  font-size: 12px;
+  font-weight: 300;
+}
+.rating--cantidad {
+  color: #918e9b; /* color gris */
+  font-size: 12px;
+  font-weight: 300; /* fuente liviana */
+}
+.card--text {
+  font-size: 12px;
+  font-weight: 300;
+}
+.cost {
+  font-size: 12px;
+  font-weight: 400; /* costo medio bold */
+}
+
+.foto--container {
+  /* contenedor de cada foto */
+  display: flex; /* flex */
+  position: relative; /* ponemos esto para poder mover el boton arriba */
+}
+.status {
+  position: absolute; /* posicion absoluta respecto al contedor de fotos */
+  top: 5px; /* los posicionamos */
+  left: 6px;
+  background-color: white; /* le damos color blanco */
+  border-radius: 3px; /* borde redondeado */
+  font-weight: 400; /* fuente normal */
+  font-size: 10px; /* fuente chica */
+  padding: 3px 7px; /* un poco de rellleno */
+  text-align: center; /* alineamos el texto al centro del boton */
+}
